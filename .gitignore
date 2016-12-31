@@ -20,3 +20,5 @@
 /typo3temp/
 /.env
 /serverconfig/mariadb/dbDataVolume
+/Packages/
+/composer.lock
