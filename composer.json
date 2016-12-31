@@ -1,0 +1,14 @@
+{
+  "repositories": [
+    { "type": "composer", "url": "https://composer.typo3.org/" },
+  ],
+  "name": "alexgunkel/typo3-6",
+  "config": {
+    "vendor-dir": "Packages/Libraries",
+    "bin-dir": "bin",
+    "secure-http": false
+  },
+  "require": {
+    "typo3/cms": "^6.2.0"
+  }
+}
