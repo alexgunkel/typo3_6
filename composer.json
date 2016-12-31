@@ -1,6 +1,6 @@
 {
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org/" },
+    { "type": "composer", "url": "https://composer.typo3.org/" }
   ],
   "name": "alexgunkel/typo3-6",
   "config": {
