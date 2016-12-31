@@ -16,7 +16,7 @@ php:
     volumes:
         - ./:/www
     environment:
-        - TYPO3_CONTEXT=Development/AG
+        - TYPO3_CONTEXT=${TYPO3_CONTEXT}
 mariadb:
     image: mariadb:5.5
     ports:
@@ -24,10 +24,10 @@ mariadb:
     volumes:
         - ./serverconfig/mariadb/dbDataVolume:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=admin
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=user
-      - MYSQL_DATABASE=user
+      - MYSQL_ROOT_PASSWORD=${mariaDbRootPassword}
+      - MYSQL_USER=${mariaDbUser}
+      - MYSQL_PASSWORD=${mariaDbPassword}
+      - MYSQL_DATABASE=${mariaDb}
 phpmyadmin:
     image: phpmyadmin/phpmyadmin
     links:
