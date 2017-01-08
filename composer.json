@@ -1,6 +1,8 @@
 {
   "repositories": [
-    { "type": "composer", "url": "https://composer.typo3.org/" }
+    { "type": "composer", "url": "https://composer.typo3.org/" },
+    { "type": "vcs", "url": "https://github.com/alexgunkel/typo3template"}
+
   ],
   "name": "alexgunkel/typo3-6",
   "config": {
@@ -9,6 +11,7 @@
     "secure-http": false
   },
   "require": {
-    "typo3/cms": "^8.1.0"
+    "typo3/cms": "^8.1.0",
+    "alexgunkel/typo3template": "dev-master"
   }
 }

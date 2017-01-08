@@ -12,7 +12,7 @@ web:
 php:
     build: ./serverconfig/php/fpm
     links:
-        - mariadb:mariadb
+        - mariadb:db
     volumes:
         - ./:/www
     environment:
@@ -28,7 +28,7 @@ php-cli:
 mariadb:
     image: mariadb:latest
     ports:
-        - 3301:3306
+        - 3306:3306
     volumes:
         - ./serverconfig/mariadb/dbDataVolume:/var/lib/mysql
     environment:
