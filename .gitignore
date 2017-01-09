@@ -5,6 +5,7 @@
 /fileadmin/_processed_/
 /uploads/
 # Ignore cache
+/typo3conf/ext/
 /typo3conf/temp_CACHED*
 /typo3conf/temp_fieldInfo.php
 /typo3conf/deprecation_*.log
